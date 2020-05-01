@@ -109,7 +109,6 @@ def printAll(data, data_keep):
     white = Fore.WHITE
     red = Fore.RED
     green = Fore.GREEN
-    cyan = Fore.CYAN
 
     print('Initial bits:        ', arr)
 
