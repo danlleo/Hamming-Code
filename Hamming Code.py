@@ -139,7 +139,6 @@ def printAll(data, data_keep):
             print(green + str(bits[i]), end=" ")
 
     print(white, ']')
-
     print(findError(bits, bits_keeper, positions))
 
 
