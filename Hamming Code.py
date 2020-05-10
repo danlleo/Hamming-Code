@@ -90,8 +90,6 @@ def findError(arr, keep, positions):
         if arr[i] != keep[i]:
             sum += i+1
 
-    print(arr)
-    print(keep)
     if sum != 0:
         return ('Found an error at the position: ' + str(sum))
     else:
