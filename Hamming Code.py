@@ -1,4 +1,5 @@
 # Before running code, please install colorama -- pip install colorama
+# Good luck!
 
 from colorama import Fore, Back, Style
 
