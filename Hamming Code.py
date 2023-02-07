@@ -1,6 +1,4 @@
 # Before running code, please install colorama -- pip install colorama
-# Good luck!
-# BLM
 
 from colorama import Fore, Back, Style
 
@@ -8,8 +6,8 @@ from colorama import Fore, Back, Style
 def isPowerOfTwo(n):
     if n <= 0:
         return False
-    else:
-        return n & (n - 1) == 0
+    
+    return n & (n - 1) == 0
 
 # Function that gets the positions of check bits
 def getPositions(bit):
@@ -81,7 +79,7 @@ def resetToZero(arr, positions):
 
     return arr
 
-# find an error
+# Find an error
 def findError(arr, keep, positions):
     resetToZero(arr, positions)
     iterate(positions, arr)
@@ -94,9 +92,9 @@ def findError(arr, keep, positions):
 
     if sum != 0:
         return ('Found an error at the position: ' + str(sum))
-    else:
-        return ('Didnt find an error!')
-
+    
+    return ('Didnt find an error!')
+        
 # Print all stuff
 def printAll(data, data_keep):
     arr = []
@@ -140,7 +138,6 @@ def printAll(data, data_keep):
 
     print(white, ']')
     print(findError(bits, bits_keeper, positions))
-
 
 # Main function for initialize
 def main():
